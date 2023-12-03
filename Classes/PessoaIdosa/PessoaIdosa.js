@@ -3,8 +3,6 @@ const Pessoa = require("../Pessoa/Pessoa")
 class PessoaIdosa extends Pessoa {
     idade;
     #endereco;
-    mobilidadeReduzida;
-    condicaoEspecial;
     static listaPessoasIdososas = []
 
     constructor(nome, email, telefone, idade, endereco) {
