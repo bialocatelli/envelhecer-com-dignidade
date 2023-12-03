@@ -35,6 +35,8 @@ class PessoaIdosa extends Pessoa {
         }
     }
 
+    /*deletarCadastroPessoaIdosa()
+    agendarProfissional(profissional)*/
 
 }
 module.exports = PessoaIdosa
