@@ -10,7 +10,7 @@ class Profissional extends Pessoa {
         super(nome, email, telefone);
         this.tipoServico = tipoServico;
         this.#documento = documento;
-        this.registroProfissional = registroProfissional
+        this.registroProfissional = registroProfissional;
         this.constructor.listaProfissionais.push({nome: this.nome, telefone: this.telefone, tipoServico: this.tipoServico})
     }
 
