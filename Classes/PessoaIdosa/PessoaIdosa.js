@@ -3,13 +3,13 @@ const Pessoa = require("../Pessoa/Pessoa")
 class PessoaIdosa extends Pessoa {
     idade;
     #endereco;
-    static listaPessoasIdososas = []
+    static pessoasIdososas = []
 
     constructor(nome, email, telefone, idade, endereco) {
         super(nome, email, telefone);
         this.idade = idade;
         this.#endereco = endereco;
-        this.constructor.listaPessoasIdososas.push({ nome: this.nome, telefone: this.telefone, idade: this.idade })
+        this.constructor.pessoasIdososas.push({ nome: this.nome, telefone: this.telefone, idade: this.idade })
     }
 
     getEndereco() {

@@ -1,17 +1,18 @@
 const Pessoa = require("../Pessoa/Pessoa");
 
 class Profissional extends Pessoa {
-    tipoServico;
     #documento;
+    areaAtuacao;
     registroProfissional;
-    static listaProfissionais = []
+    static profissionais = [];
+    static servicos = [];
 
-    constructor(nome, email, telefone, documento, registroProfissional) {
+    constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
         super(nome, email, telefone);
-        this.tipoServico = tipoServico;
         this.#documento = documento;
+        this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
-        this.constructor.listaProfissionais.push({nome: this.nome, telefone: this.telefone, tipoServico: this.tipoServico})
+        this.constructor.profissionais.push({nome: this.nome, telefone: this.telefone})
     }
 
     getDocumento() {
@@ -20,7 +21,7 @@ class Profissional extends Pessoa {
 
     //implementar
     /*
-    cadastrarProfissional()
+    cadastrarProfissional() - se area de atuação for saude o registro profissional não pode ser nulo.
     deletarProfissinonal()
     adicionarServico()*/
 }
