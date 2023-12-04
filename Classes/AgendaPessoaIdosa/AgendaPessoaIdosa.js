@@ -1,1 +1,7 @@
-// agendarProfissional(profissional, data)
+class AgendaPessoaIdosa {
+    static contatosRealizados = [];
+
+    contatarProfissional(profissional){
+
+    }
+}

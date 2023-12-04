@@ -1,11 +1,11 @@
 class Servicos {
     valor;
-    valorFlexível;
+    voluntario;
     tipoServico;
 
-    constructor(valor, valorFlexível, tipoServico) {
+    constructor(valor, voluntario, tipoServico) {
         this.valor = valor;
-        this.valorFlexível = valorFlexível;
+        this.voluntario = voluntario;
         this.tipoServico = tipoServico;
     }
 
