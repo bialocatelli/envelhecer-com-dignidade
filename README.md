@@ -1,7 +1,7 @@
 # Envelhecer com Dignidade
 
 ## Contexto
-De acordo com um artigo da Assembléia Geral da Onu, a década de 2021 a 2030 será a década do envelhecimento saudável. Algumas metas foram estabelecidas para chegar ao objetivo do envelhecimento saudável: "mudar a forma como as pessoas pensam, sentem e agem em relação à idade e ao envelhecimento; facilitar a capacidade dos idosos de participar e contribuir com suas comunidades e sociedade; prestar atenção integrada e serviços de saúde primários que atendam às necessidades do indivíduo; e prover acesso a cuidados de longa duração para pessoas idosas que deles necessitem." (fonte: "https://brasil.un.org/pt-br/105264-assembleia-geral-da-onu-declara-2021-2030-como-d%C3%A9cada-do-envelhecimento-saud%C3%A1vel").
+De acordo com um artigo da Assembléia Geral da Onu, a década de 2021 a 2030 será a década do envelhecimento saudável. Algumas metas foram estabelecidas para chegar ao objetivo do envelhecimento saudável, entre elas: "mudar a forma como as pessoas pensam, sentem e agem em relação à idade e ao envelhecimento; facilitar a capacidade dos idosos de participar e contribuir com suas comunidades e sociedade; prestar atenção integrada e serviços de saúde primários que atendam às necessidades do indivíduo; e prover acesso a cuidados de longa duração para pessoas idosas que deles necessitem." (fonte: "https://brasil.un.org/pt-br/105264-assembleia-geral-da-onu-declara-2021-2030-como-d%C3%A9cada-do-envelhecimento-saud%C3%A1vel").
 
 
 ## Problema
