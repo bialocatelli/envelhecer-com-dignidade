@@ -9,10 +9,10 @@
 ## Diagrama UML
 
 ## Tecnologias
-JavaScript 
-Nodejs
-Jest
-Git
+- JavaScript 
+- Nodejs
+- Jest
+- Git
 
 ## Instruções para instalação
 ```bash
