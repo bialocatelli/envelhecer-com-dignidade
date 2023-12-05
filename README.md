@@ -48,7 +48,7 @@ npm test --coverage
 - Desenvolver um front-end;
 
 ## Contribuições
-Esse projeto está em construção. Se caso quiser contribuir, fique à vontade para dar ideias ou para colocar à mão na massa também =)
+Esse projeto está em construção. Se caso quiser contribuir, fique à vontade para dar ideias ou para colocar a mão na massa também =)
 
 ## Autora
 Beatriz Locatelli - @bialocatelli
