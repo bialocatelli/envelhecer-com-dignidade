@@ -1,20 +1,20 @@
-## Envelhecer com Dignidade
+# Envelhecer com Dignidade
 
-# Contexto
+## Contexto
 
-# Problema
+## Problema
 
-# Solução
+## Solução
 
-# Diagrama UML
+## Diagrama UML
 
-# Tecnologias
+## Tecnologias
 JavaScript 
 Nodejs
 Jest
 Git
 
-# Instruções para instalação
+## Instruções para instalação
 ```bash
 # clonar repositório
 git clone https://github.com/bialocatelli/envelhecer-com-dignidade
@@ -32,9 +32,9 @@ npm install
 npm test --coverage
 ```
 
-# Implementações Futuras
+## Implementações Futuras
 - Implementar mensagem automática no whatsapp;
 - Conectar a um banco de dados;
 - Desenvolver um front-end;
 
-# Cobertura de Testes
+## Cobertura de Testes
