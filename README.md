@@ -7,10 +7,10 @@ De acordo com um artigo da Assembléia Geral da Onu, a década de 2021 a 2030 se
 ## Problema
 Sabemos que a população idosa é invibilizada em diversas questões e muitas vezes não contam com uma rede de apoio. Durante o desenvolvimento do projeto pensei muito na minha mãe (62 anos) e na minha avó (85 anos). Na minha experiência com elas, pude perceber dois problemas centrais:
  - a dificuldade de achar um profissional que esteja disposto ou que saiba como atender uma pessoa com mais de 80 anos;
- - a dificuldade da minha mãe em usar o computador/celular, se sentindo excluida e com receio quando é necessário fazer qualquer coisa pela internet.
+ - a dificuldade que algumas pessoas mais velhas econtram ao usar computador/celular, geralmente se sentindo excluidas e com receio quando é necessário fazer qualquer coisa pela internet.
 
 ## Solução
-Pensando nessas questões, imaginei uma plataforma que possa conectar pessoas idosas com profissionais de diversas áreas(saúde, beleza, lazer, educação) para atender exclusivamente essa população. O profissional pode optar por fazer um trabalho voluntário ou cobrar um valor por serviço.
+Pensando nessas questões, imaginei uma plataforma que possa conectar pessoas idosas com profissionais de diversas áreas(saúde, beleza, lazer, educação) para atender exclusivamente essa população.
 Uma das formas de facilitar essa conexão foi criando um cadastro simples pra pessoa idosa.
 Dentro da plataforma, o usuário idoso pode econtrar um profissional pelo serviço e ver o valor desse serviço. Para evitar um possível desgaste ou uma dificuldade a mais com agendamento, o profissional será notificado e entrará em contato pelo telefone para marcar um horário.
 
