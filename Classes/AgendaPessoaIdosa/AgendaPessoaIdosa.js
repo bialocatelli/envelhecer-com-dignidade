@@ -1,5 +1,5 @@
 class AgendaPessoaIdosa {
-    static contatosRealizados = [];
+    static solicitacoesContato = [];
 
     contatarProfissional(profissional){
 
