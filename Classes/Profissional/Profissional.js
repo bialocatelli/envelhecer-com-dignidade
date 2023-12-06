@@ -1,11 +1,14 @@
 const Pessoa = require("../Pessoa/Pessoa");
 const Servico = require("../Servico/Servico")
+
 class Profissional extends Pessoa {
     #documento;
     areaAtuacao;
     registroProfissional;
     static profissionais = [];
     #servicos = [];
+    historicoContatos = [];
+    numeroDeContatosRecebidos = 0;
 
     constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
         super(nome, email, telefone);
@@ -40,7 +43,6 @@ class Profissional extends Pessoa {
         return `Olá, seu cadastro foi realizado com sucesso!`
     }
 
-
     deletarCadastroProfissional() {
         let i = Profissional.profissionais.indexOf(this);
         Profissional.profissionais.splice(i, 1)
@@ -62,6 +64,10 @@ class Profissional extends Pessoa {
         this.ultrapassarLimiteDeServicos();
         this.#servicos.push(servico);
         return `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`;
+    }
+
+    contatosRecebidos(){
+        this.numeroDeContatosRecebidos++
     }
 }
 
