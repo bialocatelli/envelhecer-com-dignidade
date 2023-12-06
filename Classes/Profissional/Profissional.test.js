@@ -1,4 +1,5 @@
 const Profissional = require("./Profissional")
+const Servico = require("../Servico/Servico")
 
 describe("Teste da Classe Profissional", () => {
     test("Verifica se objeto profissional está sendo instanciado.", () => {
@@ -14,6 +15,12 @@ describe("Teste da Classe Profissional", () => {
         expect(profissional.getDocumento()).toBe("4455411");
         expect(profissional.areaAtuacao).toBe("Beleza");
         expect(profissional.registroProfissional).toBe("");
+    })
+
+    test("Valida atualização do número do documento", () => {
+        const profissional = new Profissional("Bia", "bia@email.com", "11444455588", "4455411", "Beleza", "")
+        profissional.setDocumento("111222333")
+        expect(profissional.getDocumento()).toBe("111222333")
     })
 
     test("Retorna mensagem de sucesso ao cadastrar profissional.", () => {
@@ -43,4 +50,15 @@ describe("Teste da Classe Profissional", () => {
         const profissional = new Profissional()
         expect(() => profissional.verificaTelefone("1144445")).toThrow(`Telefone inválido.`);
     })
+
+    test("Retorna mensagem de sucesso ao adicionar servico ao profissional.", () => {
+        const profissional = new Profissional()
+        const servico = new Servico("Corte de cabelo", 50, "Não")
+
+        expect(profissional.adicionarServicoAoProfissional(servico)).toBe(
+            `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`
+        )
+    })
+
+
 })

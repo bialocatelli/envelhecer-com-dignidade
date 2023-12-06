@@ -22,6 +22,10 @@ class Profissional extends Pessoa {
         return this.#documento
     }
 
+    setDocumento(novoDocumento){
+        return this.#documento = novoDocumento
+    }
+
     verificaRegistroProfissionalAreaSaude(areaAtuacao, registroProfissional) {
         if (areaAtuacao === "Saúde") {
             if (registroProfissional == null || registroProfissional == "") {
