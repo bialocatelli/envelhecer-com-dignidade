@@ -8,15 +8,18 @@ De acordo com um artigo da Assembléia Geral da Onu, a década de 2021 a 2030 se
 Sabemos que a população idosa é invibilizada em diversas questões e muitas vezes não contam com uma rede de apoio. Durante o desenvolvimento do projeto pensei no meu convívio com minha mãe (62 anos) e com minha avó (85 anos). Na minha experiência com elas, pude perceber dois problemas centrais:
  - a dificuldade de achar um profissional que esteja disposto ou que saiba como atender uma pessoa com mais de 80 anos;
  - a dificuldade que algumas pessoas mais velhas encontram ao usar computador/celular, geralmente se sentindo excluidas e com receio quando é necessário fazer qualquer coisa pela internet.
+ 
  É possível visualizar que a população idosa enfrenta questões diferentes. No exemplo que trago, há um problema de localizar profissionais que possam atender os idosos com os cuidados devidos, e há um problema de marginalizar pessoas mais velhas no uso da tecnologia.
 
 ## Solução
 Pensando nessas questões e etendendo que a população idosa enfrenta demandas diferentes, imaginei uma plataforma que procura atender a questão de faltas de profissionais e facilitar a navegação de quem tem dificuldades com celular/computador.
 
 Como?
+
 Num primeiro momento, o intuito é centralizar no site profissionais de diversas áreas(saúde, beleza, lazer, educação) que tenham interesse em atender idosos.
 
 Como deixar o uso da plataforma mais acessível para quem tem dificuldades com computador/celular?
+
 Uma das formas de facilitar essa conexão entre profissional e pessoa idosa, foi criando um cadastro mais simples pra pessoa idosa. Centralizar profissionais de diversas áreas num mesmo site também pode ajudar a econtrar mais rapidamente o serviço que a pessoa idosa precisa e reduzir o número de buscas ou cadastros em diversos sites.
 Caso o usuário tenha interesse em algum profissional ali disponível, é possível informar na plataforma uma solicitação de contato. Assim, o profissional será notificado e entrará em contato pelo telefone para marcar um horário.
 
