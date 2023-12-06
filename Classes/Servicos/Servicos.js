@@ -1,12 +1,20 @@
 class Servicos {
-    valor;
+    #valorServico;
     voluntario;
     tipoServico;
 
-    constructor(valor, voluntario, tipoServico) {
-        this.valor = valor;
+    constructor(valorServico, voluntario, tipoServico) {
+        this.#valorServico = valorServico;
         this.voluntario = voluntario;
         this.tipoServico = tipoServico;
+    }
+
+    getValorServico(){
+        return this.#valorServico
+    }
+
+    setValorServico(novoValorServico){
+        return this.#valorServico = novoValorServico
     }
 
 }
