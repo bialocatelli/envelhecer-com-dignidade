@@ -1,23 +1,21 @@
 const Pessoa = require("../Pessoa/Pessoa");
-const PessoaIdosa = require("../PessoaIdosa/PessoaIdosa");
 const Servico = require("../Servico/Servico")
-
 class Profissional extends Pessoa {
     #documento;
     areaAtuacao;
     registroProfissional;
-    static profissionais = [];
     #servicos = [];
     historicoContatos = [];
     numeroDeContatosRecebidos = 0;
+    static profissionais = [];
 
     constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
         super(nome, email, telefone);
         this.#documento = documento;
         this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
-        Profissional.profissionais.push(this);
         this.#servicos.push(this);
+        Profissional.profissionais.push(this);
     }
 
     getDocumento() {

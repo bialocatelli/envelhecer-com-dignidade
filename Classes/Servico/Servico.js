@@ -17,11 +17,11 @@ class Servico {
         return this.#valorServico = novoValorServico
     }
 
-    verificaTrabalhoVoluntario() {
-        if (this.voluntario === "Sim") {
-            return this.getValorServico() = 0.0
-        }
-    }
+    // verificaTrabalhoVoluntario() {
+    //     if (this.voluntario === "Sim") {
+    //         return this.getValorServico() = 0.0
+    //     }
+    // }
 }
 
 module.exports = Servico
