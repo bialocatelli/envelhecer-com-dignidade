@@ -5,23 +5,25 @@ De acordo com um artigo da Assembléia Geral da Onu, a década de 2021 a 2030 se
 
 
 ## Problema
-Sabemos que a população idosa é invibilizada em diversas questões e muitas vezes não contam com uma rede de apoio. Durante o desenvolvimento do projeto pensei no meu convívio com minha mãe (62 anos) e com minha avó (85 anos). Na minha experiência com elas, pude perceber dois problemas centrais:
- - a dificuldade de achar um profissional que esteja disposto ou que saiba como atender uma pessoa com mais de 80 anos;
- - a dificuldade que algumas pessoas mais velhas encontram ao usar computador/celular, geralmente se sentindo excluidas e com receio quando é necessário fazer qualquer coisa pela internet.
+Sabemos que a população idosa é invibilizada em diversas questões e muitas vezes não contam com uma rede de apoio. Durante o desenvolvimento do projeto pensei no meu convívio com minha mãe, de 62 anos, e com minha avó de 85 anos. Na minha experiência com elas, pude perceber dois problemas centrais:
 
- É possível visualizar que a população idosa enfrenta questões diferentes. No exemplo que trago, há um problema de localizar profissionais que possam atender os idosos com os cuidados devidos, e há um problema de marginalizar pessoas mais velhas no uso da tecnologia.
+- A dificuldade em encontrar profissionais dispostos ou capacitados para atender às necessidades específicas de pessoas com mais de 80 anos.
+- As barreiras enfrentadas por algumas pessoas idosas ao utilizar computadores e celulares, muitas vezes resultando em sentimentos de exclusão e receio ao realizar atividades online.
+
+ É possível visualizar que a população idosa enfrenta questões diferentes.  No exemplo que compartilho, surge a complexidade de localizar profissionais aptos a lidar com os cuidados necessários para os idosos, ao mesmo tempo em que se depara com a marginalização dessas pessoas no contexto tecnológico.
 
 ## Solução
-Pensando nessas questões e etendendo que a população idosa enfrenta demandas diferentes, imaginei uma plataforma que procura atender a questão de faltas de profissionais e facilitar a navegação de quem tem dificuldades com celular/computador.
+Considerando essas preocupações e reconhecendo as distintas necessidades da população idosa, imaginei uma plataforma dedicada a conectar profissionais e pessoas idosas e a simplificar a experiência digital para aqueles que enfrentam desafios com dispositivos móveis e computadores.
 
 Como?
 
-Num primeiro momento, o intuito é centralizar no site profissionais de diversas áreas(saúde, beleza, lazer, educação) que tenham interesse em atender idosos.
+Inicialmente, o objetivo é concentrar, em um único site, profissionais de diversas áreas, como saúde, beleza, lazer e educação, que demonstrem interesse em atender idosos.
 
-Como deixar o uso da plataforma mais acessível para quem tem dificuldades com computador/celular?
+Como tornar a utilização da plataforma mais acessível para aqueles com dificuldades em lidar com computadores/celulares?
 
-Uma das formas de facilitar essa conexão entre profissional e pessoa idosa foi criar um cadastro mais simples pra pessoa idosa. Centralizar profissionais de diversas áreas num mesmo site também pode ajudar a encontrar mais rapidamente o serviço que a pessoa idosa precisa e reduzir o número de buscas ou cadastros em diversos sites.
-Caso o usuário tenha interesse em algum profissional ali disponível, é possível informar na plataforma uma solicitação de contato. Assim, o profissional será notificado e entrará em contato pelo telefone para marcar um horário.
+Uma abordagem para facilitar a conexão entre profissionais e idosos foi a criação de um cadastro simplificado para os usuários idosos. A centralização de profissionais em um único local também tem o benefício de agilizar a busca pelos serviços necessários e reduzir a necessidade de procuras ou cadastros em diversos sites.
+
+Caso um usuário tenha interesse em um profissional listado na plataforma, é possível enviar uma solicitação de contato. Dessa forma, o profissional recebe uma notificação e pode entrar em contato por telefone para agendar um horário, simplificando ainda mais o processo.
 
 ## Diagrama UML
 ![image](/assets/uml%20envelhecer%20com%20dignidade.jpg)
