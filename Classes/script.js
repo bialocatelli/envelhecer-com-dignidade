@@ -21,9 +21,10 @@ console.log(Profissional.profissionais)
 
 const servico1 = new Servico("Corte de cabelo", 50.00, "Não")
 console.log(servico1)
-const servico2 = new Servico("Corte de cabelo", 50.00, "Sim")
+const servico2 = new Servico("Manicure", 50.00, "Não")
 console.log(servico2)
 
 
 console.log(profissional2.adicionarServicoAoProfissional(servico1))
 console.log(profissional2.adicionarServicoAoProfissional(servico2))
+

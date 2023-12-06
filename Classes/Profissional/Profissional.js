@@ -60,7 +60,6 @@ class Profissional extends Pessoa {
     adicionarServicoAoProfissional(servico) {
         this.validaServico(servico);
         this.ultrapassarLimiteDeServicos();
-        this.verificaTrabalhoVoluntario();
         this.#servicos.push(servico);
         return `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`;
     }
