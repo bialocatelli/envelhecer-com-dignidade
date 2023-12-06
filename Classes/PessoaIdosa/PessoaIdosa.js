@@ -24,11 +24,8 @@ class PessoaIdosa extends Pessoa {
 
 
     cadastrarPessoaIdosa(nome, email, telefone, idade, endereco) {
-
         this.verificaTelefone(telefone)
-
         const idoso = idade >= 60
-
         if (!idoso) {
             throw `Não foi possível realizar seu cadastro. Idade mínima tem que ser de 60 anos.`
         } else {

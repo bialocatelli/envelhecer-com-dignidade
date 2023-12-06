@@ -1,4 +1,5 @@
 const Pessoa = require("../Pessoa/Pessoa");
+const PessoaIdosa = require("../PessoaIdosa/PessoaIdosa");
 const Servico = require("../Servico/Servico")
 
 class Profissional extends Pessoa {
@@ -66,8 +67,10 @@ class Profissional extends Pessoa {
         return `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`;
     }
 
-    contatosRecebidos(){
+    contatosRecebidos() {
         this.numeroDeContatosRecebidos++
+        return `Olá, ${this.nome}. O cliente , idade anos, 
+        espera seu contato no telefone . Bons negócios!`
     }
 }
 
