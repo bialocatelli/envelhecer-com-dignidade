@@ -32,6 +32,13 @@ describe("Teste da Classe PessoaIdosa", () => {
         expect(() => pessoaIdosa.cadastrarPessoaIdosa("Bia", "bia@email.com", "11444455588", 59, "Rua João, 241")).toThrow(`Não foi possível realizar seu cadastro. Idade mínima tem que ser de 60 anos.`);
     })
 
-
+    test("Aceita o número do celular se for igual a 11 digitos", () =>{
+        const pessoaIdosa = new PessoaIdosa()
+        pessoaIdosa.verificaTelefone("11155533322")
+    })
     
+    test("Retorna mensagem de erro se número de celuar for diferente de 11 digitos", () =>{
+        const pessoaIdosa = new PessoaIdosa()
+        expect(() => pessoaIdosa.verificaTelefone("1144445")).toThrow(`Telefone inválido.`);
+    })
 })

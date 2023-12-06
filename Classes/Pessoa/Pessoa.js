@@ -8,6 +8,12 @@ class Pessoa {
         this.email = email;
         this.telefone = telefone;
     }
+
+    verificaTelefone(telefone) {
+        if (telefone.length != 11) {
+            throw "Telefone inválido."
+        }
+    }
 }
 
 module.exports = Pessoa

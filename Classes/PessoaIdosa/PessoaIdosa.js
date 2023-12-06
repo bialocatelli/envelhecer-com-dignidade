@@ -9,7 +9,7 @@ class PessoaIdosa extends Pessoa {
         super(nome, email, telefone);
         this.idade = idade;
         this.#endereco = endereco;
-        this.constructor.pessoasIdososas.push({ nome: this.nome, telefone: this.telefone, idade: this.idade })
+        PessoaIdosa.pessoasIdososas.push(this);
     }
 
     getEndereco() {
@@ -20,7 +20,11 @@ class PessoaIdosa extends Pessoa {
         return this.#endereco = novoEndereco
     }
 
+
     cadastrarPessoaIdosa(nome, email, telefone, idade, endereco) {
+
+        this.verificaTelefone(telefone)
+
         const idoso = idade >= 60
 
         if (!idoso) {
@@ -35,8 +39,11 @@ class PessoaIdosa extends Pessoa {
         }
     }
 
-    /*deletarCadastroPessoaIdosa()
-   */
+    deletarCadastroPessoaIdosa() {
+        let i = PessoaIdosa.pessoasIdososas.indexOf(this);
+        PessoaIdosa.pessoasIdososas.splice(i, 1)
+    }
 
 }
+
 module.exports = PessoaIdosa
