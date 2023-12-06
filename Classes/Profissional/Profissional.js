@@ -1,11 +1,11 @@
 const Pessoa = require("../Pessoa/Pessoa");
-
+const Servico = require("../Servico/Servico")
 class Profissional extends Pessoa {
     #documento;
     areaAtuacao;
     registroProfissional;
     static profissionais = [];
-    static servicos = [];
+    #servicos = [];
 
     constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
         super(nome, email, telefone);
@@ -13,7 +13,7 @@ class Profissional extends Pessoa {
         this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
         Profissional.profissionais.push(this);
-        Profissional.servicos.push(this);
+        this.#servicos.push(this);
     }
 
     getDocumento() {
@@ -46,5 +46,24 @@ class Profissional extends Pessoa {
         Profissional.profissionais.splice(i, 1)
     }
 
+    validaServico(servico) {
+        if (!(servico instanceof Servico)) {
+            throw `Serviço não identificado.`
+        }
+    }
+
+    ultrapassarLimiteDeServicos() {
+        if (this.#servicos.length >= 3)
+            throw (`Não foi possível adicionar mais serviços. Máximo de 3 serviços permitidos.`)
+    }
+
+    adicionarServicoAoProfissional(servico) {
+        this.validaServico(servico);
+        this.ultrapassarLimiteDeServicos();
+        this.verificaTrabalhoVoluntario();
+        this.#servicos.push(servico);
+        return `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`;
+    }
 }
+
 module.exports = Profissional
