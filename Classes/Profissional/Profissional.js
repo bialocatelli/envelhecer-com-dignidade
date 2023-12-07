@@ -7,7 +7,7 @@ class Profissional extends Pessoa {
     #servicos = [];
     historicoContatos = [];
     numeroDeContatosRecebidos = 0;
-    static profissionais = [];
+
 
     constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
         super(nome, email, telefone);
@@ -15,23 +15,14 @@ class Profissional extends Pessoa {
         this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
         this.#servicos.push(this);
-        Profissional.profissionais.push(this);
     }
 
     getDocumento() {
         return this.#documento
     }
 
-    setDocumento(novoDocumento){
+    setDocumento(novoDocumento) {
         return this.#documento = novoDocumento
-    }
-
-    verificaRegistroProfissionalAreaSaude(areaAtuacao, registroProfissional) {
-        if (areaAtuacao === "Saúde") {
-            if (registroProfissional == null || registroProfissional == "") {
-                throw "Por favor, preencha o número do registro profissional."
-            }
-        }
     }
 
     cadastrarProfissional(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
@@ -62,6 +53,14 @@ class Profissional extends Pessoa {
             throw (`Não foi possível adicionar mais serviços. Máximo de 3 serviços permitidos.`)
     }
 
+    verificaRegistroProfissionalAreaSaude(areaAtuacao, registroProfissional) {
+        if (areaAtuacao === "Saúde") {
+            if (registroProfissional == null || registroProfissional == "") {
+                throw "Por favor, preencha o número do registro profissional."
+            }
+        }
+    }
+
     adicionarServicoAoProfissional(servico) {
         this.validaServico(servico);
         this.ultrapassarLimiteDeServicos();
@@ -69,11 +68,16 @@ class Profissional extends Pessoa {
         return `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`;
     }
 
-    contatosRecebidos() {
-        this.numeroDeContatosRecebidos++
-        return `Olá, ${this.nome}. O cliente , idade anos, 
-        espera seu contato no telefone . Bons negócios!`
+    contatosRecebidos(nome) {
+        this.numeroDeContatosRecebidos++;
+        const dadosPessoaIdosa = this.historicoContatos.find(
+            (pessoIdosa) => pessoIdosa.nome === nome
+        );
+        console.log( `Olá, ${this.nome}! Esse são os dados do cliente que deseja contato:`)
+        return dadosPessoaIdosa 
     }
+
 }
 
+// implementar busca de profissional e organizar array de contatos, deixando sempre o último em primeiro
 module.exports = Profissional

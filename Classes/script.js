@@ -29,6 +29,8 @@ console.log(profissional2.adicionarServicoAoProfissional(servico1))
 console.log(profissional2.adicionarServicoAoProfissional(servico2))
 
 console.log(pessoaIdosa1.contatarProfissional(profissional1, servico1))
-console.log(profissional1.contatosRecebidos())
+console.log(pessoaIdosa2.contatarProfissional(profissional1, servico1))
+
 console.log(profissional1)
 console.log(pessoaIdosa1)
+console.log(profissional1.contatosRecebidos())
