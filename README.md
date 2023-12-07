@@ -10,10 +10,13 @@ Sabemos que a população idosa é invibilizada em diversas questões e muitas v
 - A dificuldade em encontrar profissionais dispostos ou capacitados para atender às necessidades específicas de pessoas com mais de 80 anos.
 - As barreiras enfrentadas por algumas pessoas idosas ao utilizar computadores e celulares, muitas vezes resultando em sentimentos de exclusão e receio ao realizar atividades online.
 
- É possível visualizar que a população idosa enfrenta questões diferentes.  No exemplo que compartilho, surge a complexidade de localizar profissionais aptos a lidar com os cuidados necessários para os idosos, ao mesmo tempo em que se depara com a marginalização dessas pessoas no contexto tecnológico.
+ É possível visualizar que a população idosa enfrenta questões diferentes.  No exemplo que compartilho, um dos problemas é a complexidade de localizar profissionais aptos a lidar com os cuidados necessários para os idosos. Um outro problema é referente a marginalização de pessoas idosas no contexto tecnológico.
 
 ## Solução
-Considerando essas preocupações e reconhecendo as distintas necessidades da população idosa, imaginei uma plataforma dedicada a conectar profissionais e pessoas idosas e a simplificar a experiência digital para aqueles que enfrentam desafios com dispositivos móveis e computadores.
+Considerando essas preocupações e reconhecendo as distintas necessidades da população idosa, construi uma plataforma que busca atender duas demandas: 
+
+1ª- conectar profissionais e pessoas idosas;
+2ª- simplificar a experiência digital para aqueles que enfrentam desafios com dispositivos móveis e computadores.
 
 Como?
 
