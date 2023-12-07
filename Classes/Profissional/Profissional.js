@@ -69,15 +69,15 @@ class Profissional extends Pessoa {
     }
 
     contatosRecebidos(nome) {
-        this.numeroDeContatosRecebidos++;
         const dadosPessoaIdosa = this.historicoContatos.find(
             (pessoIdosa) => pessoIdosa.nome === nome
         );
-        console.log( `Olá, ${this.nome}! Esse são os dados do cliente que deseja contato:`)
+        console.log( `Olá, ${this.nome}! Até o momento você recebeu ${this.numeroDeContatosRecebidos} solicitações de contato.
+        Esses são os dados recentes do cliente que deseja contato:`)
         return dadosPessoaIdosa 
     }
 
 }
 
-// implementar busca de profissional e organizar array de contatos, deixando sempre o último em primeiro
+// implementar busca de profissional
 module.exports = Profissional

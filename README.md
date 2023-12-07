@@ -16,6 +16,7 @@ Sabemos que a população idosa é invibilizada em diversas questões e muitas v
 Considerando essas preocupações e reconhecendo as distintas necessidades da população idosa, construi uma plataforma que busca atender duas demandas: 
 
 1ª- conectar profissionais e pessoas idosas;
+
 2ª- simplificar a experiência digital para aqueles que enfrentam desafios com dispositivos móveis e computadores.
 
 Como?
