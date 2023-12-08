@@ -1,5 +1,6 @@
 const Pessoa = require("../Pessoa/Pessoa");
 const Servico = require("../Servico/Servico")
+
 class Profissional extends Pessoa {
     #documento;
     areaAtuacao;
@@ -7,7 +8,7 @@ class Profissional extends Pessoa {
     #servicos = [];
     historicoContatos = [];
     numeroDeContatosRecebidos = 0;
-
+    static profissionais = [];
 
     constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
         super(nome, email, telefone);
@@ -15,6 +16,7 @@ class Profissional extends Pessoa {
         this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
         this.#servicos.push(this);
+        Profissional.profissionais.push(this);
     }
 
     getDocumento() {
@@ -72,12 +74,12 @@ class Profissional extends Pessoa {
         const dadosPessoaIdosa = this.historicoContatos.find(
             (pessoIdosa) => pessoIdosa.nome === nome
         );
-        console.log( `Olá, ${this.nome}! Até o momento você recebeu ${this.numeroDeContatosRecebidos} solicitações de contato.
+        this.numeroDeContatosRecebidos == 0 ?
+            console.log(`Olá, ${this.nome}! Até o momento você recebeu ${this.numeroDeContatosRecebidos} solicitações de contato.`)
+            : console.log(`Olá, ${this.nome}! Até o momento você recebeu ${this.numeroDeContatosRecebidos} solicitações de contato.
         Esses são os dados recentes do cliente que deseja contato:`)
-        return dadosPessoaIdosa 
+        return dadosPessoaIdosa
     }
-
 }
 
-// implementar busca de profissional
 module.exports = Profissional

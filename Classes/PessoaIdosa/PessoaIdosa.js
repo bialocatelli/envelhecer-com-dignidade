@@ -1,23 +1,17 @@
 const Pessoa = require("../Pessoa/Pessoa")
 const Profissional = require("../Profissional/Profissional")
+
 class PessoaIdosa extends Pessoa {
     idade;
     #endereco;
     historicoContatos;
+    static pessoasIdososas = [];
 
     constructor(nome, email, telefone, idade, endereco) {
         super(nome, email, telefone);
         this.idade = idade;
-        this.#endereco = endereco;
-        this.historicoContatos = []
-    }
-
-    getEndereco() {
-        return this.#endereco
-    }
-
-    setEndereco(novoEndereco) {
-        return this.#endereco = novoEndereco
+        this.historicoContatos = [];
+        PessoaIdosa.pessoasIdososas.push(this);
     }
 
     cadastrarPessoaIdosa(nome, email, telefone, idade, endereco) {
@@ -46,10 +40,6 @@ class PessoaIdosa extends Pessoa {
         }
     }
 
-    localizarProfissional(profissional) {
-
-    }
-
     adicionaProfissional(profissional, servico) {
         this.historicoContatos.push({ Profissional: profissional.nome, Servico: servico.tipoServico, Valor: servico.getValorServico() })
         this.historicoContatos.reverse()
@@ -69,7 +59,6 @@ class PessoaIdosa extends Pessoa {
 
         return (`Olá, ${this.nome}! O profissional ${profissional.nome} irá entrar em contato em até 24h através do telefone ${this.telefone}.
 O serviço ${servico.tipoServico} está no valor de R$${servico.getValorServico()},00 reais. Obrigado!`)
-
     }
 }
 
