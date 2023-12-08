@@ -6,7 +6,7 @@ class PessoaIdosa extends Pessoa {
     historicoContatos;
     static pessoasIdososas = [];
 
-    constructor(nome, email, telefone, idade, endereco) {
+    constructor(nome, email, telefone, idade) {
         super(nome, email, telefone);
         this.idade = idade;
         this.historicoContatos = [];

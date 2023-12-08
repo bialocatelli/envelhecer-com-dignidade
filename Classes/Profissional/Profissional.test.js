@@ -64,14 +64,22 @@ describe("Teste da Classe Profissional", () => {
         expect(() => profissional.validaServico("Levar para passeio")).toThrow(`Serviço não identificado.`);
     })
 
-    // test('Deve lançar um erro se quantidade de serviços adicionados for maior que 3', () => {
-    //     const profissional = new Profissional();
-    //     profissional.adicionarServicoAoProfissional(new Servico('Corte de cabelo', 30));
-    //     profissional.adicionarServicoAoProfissional(new Servico('Manicure', 20));
-    //     profissional.adicionarServicoAoProfissional(new Servico('Pedicure', 25));
-    //     profissional.adicionarServicoAoProfissional(new Servico('Arrumar eletrodoméstico', 100));
-    //     expect(() => profissional.adicionarServicoAoProfissional()).toThrow(`Não foi possível adicionar mais serviços. Máximo de 3 serviços permitidos.`);
-    // })
 
+//   test('Deve retornar os dados da pessoa idosa correta quando existe histórico', () => {
 
-})
+//     // Adicione uma pessoa idosa ao histórico de contatos
+//     pessoaIdosa.historicoContatos.push({ nome: 'João', /* outros dados */ });
+
+//     // Chame a função contatosRecebidos
+//     const dadosPessoaIdosa = pessoaIdosa.contatosRecebidos('João');
+
+//     // Verifique se a função retorna os dados corretos da pessoa idosa
+//     expect(dadosPessoaIdosa).toEqual({ nome: 'João', /* outros dados */ });
+//   });
+
+  test('Deve retornar undefined quando não há histórico de contatos', () => {   
+    const profissional = new Profissional()
+    const resultado = profissional.contatosRecebidos('João');
+    expect(resultado).toBeUndefined();
+  });
+});

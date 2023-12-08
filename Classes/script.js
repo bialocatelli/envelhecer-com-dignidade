@@ -43,11 +43,6 @@ console.log(profissional2.adicionarServicoAoProfissional(servico1))
 console.log(profissional2.adicionarServicoAoProfissional(servico2))
 
 
-// console.log("*********************************************")
-// console.log("ENCONTRAR PROFISSIONAL")
-// console.log(pessoaIdosa1.localizarProfissional("Renan"))
-// console.log(profissional1.encontrarServicos("Corte de cabelo"))
-
 console.log("*********************************************")
 console.log("CONTATAR PROFISSIONAL")
 console.log(pessoaIdosa1.contatarProfissional(profissional2, servico1))
