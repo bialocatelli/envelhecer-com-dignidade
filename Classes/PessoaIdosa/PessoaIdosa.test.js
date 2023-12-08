@@ -19,7 +19,7 @@ describe("Teste da Classe PessoaIdosa", () => {
     test("Retorna mensagem de sucesso ao cadastrar pessoa idosa.", () => {
         const pessoaIdosa = new PessoaIdosa()
         expect(pessoaIdosa.cadastrarPessoaIdosa("Bia", "bia@email.com", "11444455588", 61)).toBe(
-            `Olá, seu cadastro foi realizado com sucesso!`
+            `Olá, ${pessoaIdosa.nome}, seu cadastro foi realizado com sucesso!`
         )
         expect(pessoaIdosa.nome).toBe("Bia");
         expect(pessoaIdosa.email).toBe("bia@email.com");
@@ -42,14 +42,19 @@ describe("Teste da Classe PessoaIdosa", () => {
         expect(() => pessoaIdosa.verificaTelefone("1144445")).toThrow(`Telefone inválido.`);
     })
 
-    test("Retorna mensagem de sucesso ao contatar profissional", () => {
+    test('Deve lançar um erro se o profissional não for uma instância de Profissional', () => {
         const pessoaIdosa = new PessoaIdosa();
-        const profissional = new Profissional("Bia", "bia@email.com", "11444455588", "4455411", "Beleza", "");
-        const servico = new Servico("Corte de cabelo", 50, "Não");
+        expect(() => pessoaIdosa.verificaProfissional("João")).toThrow(`Profissional não encontrado.`);
+    })
+
+    test("Retorna mensagem de sucesso ao contatar profissional", () => {
+        const pessoaIdosa = new PessoaIdosa("Bia", "bia@email.com", "11444455588", 60);
+        const profissional = new Profissional("Carol", "carol@email.com", "11444455588", "4455411", "Beleza", "");
+        const servico = new Servico("Corte de cabelo", 50);
 
         expect(pessoaIdosa.contatarProfissional(profissional, servico)).toBe(
-            `Olá, ${this.nome}! O profissional ${profissional.nome} irá entrar em contato em até 24h através do telefone ${this.telefone}.
-        O serviço ${servico.tipoServico} está no valor de R$${servico.getValorServico()},00 reais. Obrigado!`
+            (`Olá, ${pessoaIdosa.nome}! O profissional ${profissional.nome} irá entrar em contato em até 24h através do telefone ${pessoaIdosa.telefone}. O serviço ${servico.tipoServico} está no valor de R$${servico.getValorServico()},00 reais. Obrigado!`)
+
         )
     })
 })

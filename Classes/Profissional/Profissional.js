@@ -36,7 +36,7 @@ class Profissional extends Pessoa {
         this.#documento = documento;
         this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
-        return `Olá, seu cadastro foi realizado com sucesso!`
+        return `Olá, ${this.nome}, seu cadastro foi realizado com sucesso!`
     }
 
     deletarCadastroProfissional() {
@@ -51,7 +51,7 @@ class Profissional extends Pessoa {
     }
 
     ultrapassarLimiteDeServicos() {
-        if (this.servicos.length >= 3)
+        if (this.servicos.length > 3)
             throw (`Não foi possível adicionar mais serviços. Máximo de 3 serviços permitidos.`)
     }
 

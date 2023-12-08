@@ -34,11 +34,14 @@ const servico1 = new Servico("Corte de cabelo", 50.00)
 console.log(servico1)
 const servico2 = new Servico("Manicure", 50.00)
 console.log(servico2)
+const servico3 = new Servico("Arrumar eletrodomestico", 100.00)
+const servico4 = new Servico("Aulas de computação", 80.00)
 
 console.log("*********************************************")
 console.log("ADICIONANDO SERVIÇO AO PROFISSIONAL")
 console.log(profissional2.adicionarServicoAoProfissional(servico1))
 console.log(profissional2.adicionarServicoAoProfissional(servico2))
+
 
 // console.log("*********************************************")
 // console.log("ENCONTRAR PROFISSIONAL")

@@ -23,7 +23,7 @@ class PessoaIdosa extends Pessoa {
             this.email = email;
             this.telefone = telefone;
             this.idade = idade;
-            return `Olá, seu cadastro foi realizado com sucesso!`
+            return `Olá, ${this.nome}, seu cadastro foi realizado com sucesso!`
         }
     }
 
@@ -33,7 +33,7 @@ class PessoaIdosa extends Pessoa {
     }
 
     verificaProfissional(profissional) {
-        if (!profissional instanceof Profissional) {
+        if (!(profissional instanceof Profissional)) {
             throw `Profissional não encontrado.`
         }
     }
@@ -55,8 +55,7 @@ class PessoaIdosa extends Pessoa {
         this.adicionaProfissional(profissional, servico);
         this.atualizaHistoricoRecebidosProfissional(profissional)
 
-        return (`Olá, ${this.nome}! O profissional ${profissional.nome} irá entrar em contato em até 24h através do telefone ${this.telefone}.
-O serviço ${servico.tipoServico} está no valor de R$${servico.getValorServico()},00 reais. Obrigado!`)
+        return (`Olá, ${this.nome}! O profissional ${profissional.nome} irá entrar em contato em até 24h através do telefone ${this.telefone}. O serviço ${servico.tipoServico} está no valor de R$${servico.getValorServico()},00 reais. Obrigado!`)
     }
 }
 
