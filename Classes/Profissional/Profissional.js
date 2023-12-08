@@ -5,9 +5,9 @@ class Profissional extends Pessoa {
     #documento;
     areaAtuacao;
     registroProfissional;
-    #servicos = [];
-    historicoContatos = [];
     numeroDeContatosRecebidos = 0;
+    servicos = [];
+    historicoContatos = [];
     static profissionais = [];
 
     constructor(nome, email, telefone, documento, areaAtuacao, registroProfissional) {
@@ -15,7 +15,7 @@ class Profissional extends Pessoa {
         this.#documento = documento;
         this.areaAtuacao = areaAtuacao;
         this.registroProfissional = registroProfissional;
-        this.#servicos.push(this);
+        this.servicos.push(this);
         Profissional.profissionais.push(this);
     }
 
@@ -51,7 +51,7 @@ class Profissional extends Pessoa {
     }
 
     ultrapassarLimiteDeServicos() {
-        if (this.#servicos.length >= 3)
+        if (this.servicos.length >= 3)
             throw (`Não foi possível adicionar mais serviços. Máximo de 3 serviços permitidos.`)
     }
 
@@ -66,7 +66,7 @@ class Profissional extends Pessoa {
     adicionarServicoAoProfissional(servico) {
         this.validaServico(servico);
         this.ultrapassarLimiteDeServicos();
-        this.#servicos.push(servico);
+        this.servicos.push(servico);
         return `Serviço ${servico.tipoServico}, no valor de R$ ${servico.getValorServico()} reais, adicionado ao profissional ${this.nome}!`;
     }
 

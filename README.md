@@ -30,7 +30,7 @@ Uma abordagem para facilitar a conexão entre profissionais e idosos foi a cria�
 Caso um usuário tenha interesse em um profissional listado na plataforma, é possível enviar uma solicitação de contato. Dessa forma, o profissional recebe uma notificação e pode entrar em contato por telefone para agendar um horário, simplificando ainda mais o processo.
 
 ## Diagrama UML
-![image](/assets/uml%20envelhecer%20com%20dignidade.jpg)
+![image](/assets/uml-projeto-reprograma-envelhecer-com-diginidade.jpg)
 
 ## Tecnologias
 - JavaScript 

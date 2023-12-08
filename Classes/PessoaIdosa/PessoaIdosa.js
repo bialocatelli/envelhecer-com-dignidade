@@ -3,7 +3,6 @@ const Profissional = require("../Profissional/Profissional")
 
 class PessoaIdosa extends Pessoa {
     idade;
-    #endereco;
     historicoContatos;
     static pessoasIdososas = [];
 
@@ -24,7 +23,6 @@ class PessoaIdosa extends Pessoa {
             this.email = email;
             this.telefone = telefone;
             this.idade = idade;
-            this.#endereco = endereco;
             return `Olá, seu cadastro foi realizado com sucesso!`
         }
     }
