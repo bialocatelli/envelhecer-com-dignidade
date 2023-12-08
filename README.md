@@ -56,6 +56,7 @@ npm install
 npm test --coverage
 ```
 ## Cobertura de Testes
+![image](/assets/test%20coverage.png)
 
 ## Implementações Futuras
 - Implementar mensagem automática no whatsapp;
